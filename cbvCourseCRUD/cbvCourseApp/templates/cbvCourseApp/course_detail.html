@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'cbvCourseApp/base.html' %}
+{% block body_block %}
+    <h1>Course Details</h1>
+    <ol>
+        <h3><li>Course Name: {{course.name}}</li></h3>
+        <h3><li>Course Description: {{course.description}}</li></h3>
+        <h3><li>Course Instructor: {{course.instructor}}</li></h3>
+        <h3><li>Course Rating: {{course.rating}}</li></h3>
+    </ol>
+    <h3><li><a href="/courses/">Home</a></li></h3>
+    <h3><li><a href="/update/{{course.id}}">Update Course</a></li></h3>
+    <h3><li><a href="/delete/{{course.id}}">Delete Course</a></li></h3>
+{% endblock %}
